@@ -11,10 +11,10 @@ function isEveryElementInteger(array) {
 
 const arrayCubeRootToJson = array => {
   if (!Array.isArray(array)) {
-    throw new TypeError(`Expected array, received ${typeof array}`);
+    throw new TypeError('Expected array, received ${typeof array}');
   }
   if (!isEveryElementInteger(array)) {
-    throw new TypeError(`Array not completely comprised of integers.`);
+    throw new TypeError('Array not completely comprised of integers.');
   }
 
   const resultantObject = {};
